@@ -7,13 +7,7 @@ A console-based single-player racing game built in Java. The player selects a ca
 ## How to Run
 
 ```bash
-run.bat
-```
-
-Or manually:
-
-```bash
-javac -d out src/racing/**/*.java src/racing/Rii.java
+javac -encoding UTF-8 -d out -sourcepath src src\racing\Rii.java
 java -cp out racing.Rii
 ```
 
