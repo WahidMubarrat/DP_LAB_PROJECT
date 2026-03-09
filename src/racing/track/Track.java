@@ -9,7 +9,16 @@ public abstract class Track {
     protected String location;
     protected double lengthKm;
 
-    public abstract void trackInfo();
+    public abstract String getTrackType();
+
+    public void trackInfo() {
+        System.out.println("\n  ================================================");
+        System.out.println("  Track   : " + trackName);
+        System.out.println("  Country : " + location);
+        System.out.println("  Length  : " + lengthKm + " km");
+        System.out.println("  Type    : " + getTrackType());
+        System.out.println("  ================================================");
+    }
 
     public abstract void startLine();
 

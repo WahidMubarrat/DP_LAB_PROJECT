@@ -84,9 +84,6 @@ public class Rii {
         player.recordRace();
         player.showStats();
 
-        // 9. Runtime Strategy swap demonstration
-        demonstrateStrategySwap(car);
-
         sc.close();
     }
 
@@ -105,21 +102,6 @@ public class Rii {
             case 3:  return new HoneywellTurbocharger();
             default: return new AlpineTurbocharger();
         }
-    }
-
-    // ── Upgrades car to max configuration after race ─────────────────────────
-    private static void demonstrateStrategySwap(Car car) {
-        printHeader("ENGINE UPGRADE");
-        System.out.println("  Swapping engine : "
-                + car.getEngineBehavior().getClass().getSimpleName() + " -> V12Engine");
-        car.setEngineBehavior(createEngine(3));
-
-        System.out.println("  Swapping turbo  : "
-                + car.getTurbochargerBehavior().getClass().getSimpleName()
-                + " -> HoneywellTurbocharger");
-        car.setTurbochargerBehavior(createTurbo(3));
-
-        System.out.println("  Car fully upgraded - ready for another race!\n");
     }
 
     // ── Input helper ──────────────────────────────────────────────────────────

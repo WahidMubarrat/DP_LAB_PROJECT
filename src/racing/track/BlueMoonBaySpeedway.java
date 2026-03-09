@@ -10,13 +10,8 @@ public class BlueMoonBaySpeedway extends Track {
     }
 
     @Override
-    public void trackInfo() {
-        System.out.println("\n  ================================================");
-        System.out.println("  Track   : " + trackName);
-        System.out.println("  Country : " + location);
-        System.out.println("  Length  : " + lengthKm + " km");
-        System.out.println("  Type    : High-speed oval with long straights");
-        System.out.println("  ================================================");
+    public String getTrackType() {
+        return "High-speed oval with long straights";
     }
 
     @Override

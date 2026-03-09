@@ -10,13 +10,8 @@ public class BBRaceway extends Track {
     }
 
     @Override
-    public void trackInfo() {
-        System.out.println("\n  ================================================");
-        System.out.println("  Track   : " + trackName);
-        System.out.println("  Country : " + location);
-        System.out.println("  Length  : " + lengthKm + " km");
-        System.out.println("  Type    : Technical circuit with tight chicanes");
-        System.out.println("  ================================================");
+    public String getTrackType() {
+        return "Technical circuit with tight chicanes";
     }
 
     @Override

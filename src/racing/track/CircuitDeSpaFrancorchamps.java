@@ -10,13 +10,8 @@ public class CircuitDeSpaFrancorchamps extends Track {
     }
 
     @Override
-    public void trackInfo() {
-        System.out.println("\n  ================================================");
-        System.out.println("  Track   : " + trackName);
-        System.out.println("  Country : " + location);
-        System.out.println("  Length  : " + lengthKm + " km");
-        System.out.println("  Type    : Classic GP circuit - Eau Rouge, Pouhon, Blanchimont");
-        System.out.println("  ================================================");
+    public String getTrackType() {
+        return "Classic GP circuit - Eau Rouge, Pouhon, Blanchimont";
     }
 
     @Override

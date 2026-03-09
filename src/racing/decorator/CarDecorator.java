@@ -54,9 +54,7 @@ public abstract class CarDecorator extends Car {
     @Override public TurbochargerBehavior getTurbochargerBehavior() { return decoratedCar.getTurbochargerBehavior(); }
     @Override public String getCategory()                           { return decoratedCar.getCategory(); }
 
-  
-    @Override
-    protected void displayDetails() {  }
+
 
     // ── NOS extension point ───────────────────────────────────────────────
     /** Activates the NOS system - implemented by concrete decorators. */

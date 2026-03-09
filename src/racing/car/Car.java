@@ -48,7 +48,7 @@ public abstract class Car {
     public abstract String getCategory();
 
   
-    protected abstract void displayDetails();
+    protected void displayDetails() {}
 
    
     public void carInfo() {
