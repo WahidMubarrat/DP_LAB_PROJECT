@@ -27,7 +27,6 @@ java -cp out racing.Rii
 7. Choose NOS brand       →  Resonac NOS  |  Sema NOS
 8. Race runs automatically (fixed sequence — see Template Method below)
 9. Player stats printed
-10. Post-race engine upgrade demo (Strategy swap)
 ```
 
 ---
@@ -83,7 +82,7 @@ TurbochargerBehavior (interface)
  └── HoneywellTurbocharger
 ```
 
-After the race, `demonstrateStrategySwap()` upgrades the car to V12 + Honeywell live, showing that strategies are interchangeable objects, not hardcoded behaviour.
+After the player tunes their car (step 4), the engine and turbocharger slots are swapped live on the `Car` object — demonstrating that strategies are interchangeable objects, not hardcoded behaviour.
 
 ---
 
